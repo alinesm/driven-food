@@ -129,9 +129,35 @@
     </div>
 
     <div class="checkout">
-      <button id="buttonCheckout" onclick="checkout()">Selecione os 3 itens
+      <button id="buttonCheckout" onclick="openModal()">Selecione os 3 itens
        para fechar o pedido</button>
     </div>
+</div>
+
+<div class="containerModal">
+  <div class="modal">
+      <span>Confirme seu pedido</span>
+      <div class="orders">
+        <div class="mealModal">
+          <p>meal</p>
+          <p>R$ XX</p>
+        </div>
+        <div class="drinkModal">
+          <p>drink</p>
+          <p>R$ XX</p>
+        </div>
+        <div class="dessertModal">
+          <p>dessert</p>
+          <p>R$ XX</p>
+        </div>
+        <div class="totalModal">
+          <p>TOTAL</p>
+          <p>R$ XX</p>
+        </div>
+      </div>
+      <div id="goWhatsapp" onClick="goWhatsapp()">Tudo certo, pode pedir!</div>
+      <div id="closeModal" onClick="closeModal()">Cancelar</div>
+      </div>
 </div>
 
 <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
